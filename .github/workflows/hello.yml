@@ -1,0 +1,16 @@
+# ワークフロー名
+name: Hello
+# イベント(プッシュ時に起動)
+on: push
+# ジョブの定義
+jobs:
+  # ジョブID
+  hello:
+    # ランナー(Ubuntuで実行)
+    runs-on: ubuntu-latest
+    # ステップの定義
+    steps:
+      # シェルコマンドの実行
+      - run: echo "Hello, world!"
+      # アクションの呼び出し
+      - uses: actions/checkout@v4
