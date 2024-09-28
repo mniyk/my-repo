@@ -3,7 +3,7 @@ on: push
 jobs:
   fail:
     runs-on: ubuntu-latest
-    stesp:
+    steps:
       - run: exit 1
       - run: echo "Hello"
         if: ${{ failure() }}
