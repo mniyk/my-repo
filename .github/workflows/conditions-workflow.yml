@@ -4,5 +4,5 @@ jobs:
   skip-or-run:
     if: ${{ github.actor == 'octocat' }}
     runs-on: ubuntu-latest
-    skips:
+    steps:
       - run: echo "Hello"
